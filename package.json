@@ -4,7 +4,9 @@
   "description": "Telegram integration server for nile.chat",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,8 @@
     "axios": "^0.18.0",
     "koa": "^2.6.2",
     "koa-bodyparser": "^4.2.1",
-    "nile": "git+https://github.com/ovsoinc/node-nile.git"
-  }
+    "nile": "git+https://github.com/ovsoinc/node-nile.git",
+    "snyk": "^1.161.1"
+  },
+  "snyk": true
 }
